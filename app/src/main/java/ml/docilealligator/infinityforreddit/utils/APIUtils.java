@@ -13,9 +13,9 @@ import okhttp3.RequestBody;
  */
 
 public class APIUtils {
-    public static final String OAUTH_URL = "https://www.reddit.com/api/v1/authorize.compact";
-    public static final String OAUTH_API_BASE_URI = "https://oauth.reddit.com";
-    public static final String API_BASE_URI = "https://www.reddit.com";
+    public static final String OAUTH_URL = "https://everything-site.vercel.app/api/v1/authorize";
+    public static final String OAUTH_API_BASE_URI = "https://oauth-everything-site.vercel.app";
+    public static final String API_BASE_URI = "https://everything-site.vercel.app";
     public static final String API_UPLOAD_MEDIA_URI = "https://reddit-uploaded-media.s3-accelerate.amazonaws.com";
     public static final String API_UPLOAD_VIDEO_URI = "https://reddit-uploaded-video.s3-accelerate.amazonaws.com";
     public static final String GFYCAT_API_BASE_URI = "https://api.gfycat.com/v1/gfycats/";
@@ -28,7 +28,7 @@ public class APIUtils {
 
     public static final String CLIENT_ID_KEY = "client_id";
     public static final String CLIENT_SECRET_KEY = "client_secret";
-    public static final String CLIENT_ID = "NOe2iKrPPzwscA";
+    public static final String CLIENT_ID = "everything";
     public static final String IMGUR_CLIENT_ID = "Client-ID cc671794e0ab397";
     public static final String REDGIFS_CLIENT_ID = "1828d0bcc93-15ac-bde6-0005-d2ecbe8daab3";
     public static final String REDGIFS_CLIENT_SECRET = "TJBlw7jRXW65NAGgFBtgZHu97WlzRXHYybK81sZ9dLM=";
@@ -47,12 +47,14 @@ public class APIUtils {
     public static final String AUTHORIZATION_KEY = "Authorization";
     public static final String AUTHORIZATION_BASE = "bearer ";
     public static final String USER_AGENT_KEY = "User-Agent";
-    public static final String USER_AGENT = "android:ml.docilealligator.infinityforreddit:v5.3.0 (by /u/Hostilenemy)";
+    public static final String USER_AGENT = "everything:v1.0.0";
 
     public static final String GRANT_TYPE_KEY = "grant_type";
     public static final String GRANT_TYPE_REFRESH_TOKEN = "refresh_token";
     public static final String GRANT_TYPE_CLIENT_CREDENTIALS = "client_credentials";
     public static final String REFRESH_TOKEN_KEY = "refresh_token";
+    public static final String SET_CLIENT_ID_KEY = "set_client_id";
+    public static final String SET_SITE_KEY = "set_site";
 
     public static final String DIR_KEY = "dir";
     public static final String ID_KEY = "id";

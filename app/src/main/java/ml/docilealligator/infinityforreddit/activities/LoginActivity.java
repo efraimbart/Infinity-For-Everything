@@ -60,6 +60,9 @@ import retrofit2.Retrofit;
 
 public class LoginActivity extends BaseActivity {
 
+    public static final String EXTRA_SET_CLIENT_ID_KEY = "ESCIK";
+    public static final String EXTRA_SET_SITE_KEY = "ESSK";
+
     private static final String ENABLE_DOM_STATE = "EDS";
     private static final String IS_AGREE_TO_USER_AGGREMENT_STATE = "IATUAS";
 
@@ -159,6 +162,16 @@ public class LoginActivity extends BaseActivity {
         uriBuilder.appendQueryParameter(APIUtils.DURATION_KEY, APIUtils.DURATION);
         uriBuilder.appendQueryParameter(APIUtils.SCOPE_KEY, APIUtils.SCOPE);
 
+        String setClientId = getIntent().getStringExtra(EXTRA_SET_CLIENT_ID_KEY);
+        if(setClientId != null) {
+            uriBuilder.appendQueryParameter(APIUtils.SET_CLIENT_ID_KEY, setClientId);
+        }
+
+        String setSite = getIntent().getStringExtra(EXTRA_SET_SITE_KEY);
+        if(setSite != null) {
+            uriBuilder.appendQueryParameter(APIUtils.SET_SITE_KEY, setSite);
+        }
+
         String url = uriBuilder.toString();
 
         CookieManager.getInstance().removeAllCookies(aBoolean -> {
@@ -168,7 +181,7 @@ public class LoginActivity extends BaseActivity {
         webView.setWebViewClient(new WebViewClient() {
             @Override
             public boolean shouldOverrideUrlLoading(WebView view, String url) {
-                if (url.contains("&code=") || url.contains("?code=")) {
+                if (url.startsWith(APIUtils.REDIRECT_URI) && (url.contains("&code=") || url.contains("?code="))) {
                     Uri uri = Uri.parse(url);
                     String state = uri.getQueryParameter("state");
                     if (state.equals(APIUtils.STATE)) {

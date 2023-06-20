@@ -1,13 +1,13 @@
 <h1 align="center">
-  Infinity For Reddit <a href="https://www.patreon.com/docile_alligator"><img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white" alt="Patreon"></a>
+  Infinity For Everything <a href="https://www.patreon.com/docile_alligator"><img src="https://img.shields.io/badge/Patreon-F96854?style=for-the-badge&logo=patreon&logoColor=white" alt="Patreon"></a>
   
 </h1>
 
 <div align="center">
 
-A Reddit client on Android written in Java. It does not have any ads and it features a clean UI and smooth browsing experience
+Aa Everything client on Android written in Java. It does not have any ads and it features a clean UI and smooth browsing experience
 
-<img align="right" src="https://raw.githubusercontent.com/Docile-Alligator/Infinity-For-Reddit/master/fastlane/metadata/android/en-US/images/icon.png" width=200>
+<img align="right" src="https://raw.githubusercontent.com/efraimbart/Infinity-For-Everything/master/fastlane/metadata/android/en-US/images/icon.png" width=200>
 
 </div>
 
@@ -15,28 +15,15 @@ A Reddit client on Android written in Java. It does not have any ads and it feat
 
 <div align="center">
 
-Infinity for Reddit is available on Google Play and F-Droid
-
-  <a href="https://play.google.com/store/apps/details?id=ml.docilealligator.infinityforreddit">
-      <img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
-      </a>  
-      <a href="https://f-droid.org/packages/ml.docilealligator.infinityforreddit/">
-          <img alt="Get it on F-Droid" height="80" src="https://f-droid.org/badge/get-it-on.png" />
-  </a>
-
-</div>
-
-<div align="center">
-
 <br>
-    <a href="https://github.com/Docile-Alligator/Infinity-For-Reddit/wiki"><strong>Explore the docs »</strong></a>
+    <a href="https://github.com/efraimbart/Infinity-For-Everything/wiki"><strong>Explore the docs »</strong></a>
 <br>
 
-<a href="https://github.com/Docile-Alligator/Infinity-For-Reddit/issues">Report a Bug</a>
+<a href="https://github.com/efraimbart/Infinity-For-Everything/issues">Report a Bug</a>
 ·
-<a href="https://github.com/Docile-Alligator/Infinity-For-Reddit/discussions/categories/ideas">Request a Feature</a>
+<a href="https://github.com/efraimbart/Infinity-For-Everything/discussions/categories/ideas">Request a Feature</a>
 ·
-<a href="https://github.com/Docile-Alligator/Infinity-For-Reddit/discussions/categories/q-a">Ask a Question</a>
+<a href="https://github.com/efraimbart/Infinity-For-Everything/discussions/categories/q-a">Ask a Question</a>
 
 </div>
 
@@ -44,17 +31,11 @@ Infinity for Reddit is available on Google Play and F-Droid
 
 <div align="center">
 
-[![release](https://img.shields.io/github/v/release/Docile-Alligator/Infinity-For-Reddit)](https://github.com/Docile-Alligator/Infinity-For-Reddit/releases)
-[![license](https://img.shields.io/github/license/Docile-Alligator/Infinity-For-Reddit)](LICENSE)
-[![GitHub issues](https://img.shields.io/github/issues/Docile-Alligator/Infinity-For-Reddit)](https://github.com/Docile-Alligator/Infinity-For-Reddit/issues)
+[![release](https://img.shields.io/github/v/release/efraimbart/Infinity-For-Everything)](https://github.com/efraimbart/Infinity-For-Everything/releases)
+[![license](https://img.shields.io/github/license/efraimbart/Infinity-For-Everything)](LICENSE)
+[![GitHub issues](https://img.shields.io/github/issues/efraimbart/Infinity-For-Everything)](https://github.com/efraimbart/Infinity-For-Everything/issues)
 
 </div>
-
-## Donation
-<p>Infinity for Reddit+:</p>
-<a href="https://play.google.com/store/apps/details?id=ml.docilealligator.infinityforreddit.plus">
-    <img alt="Get it on Google Play" height="80" src="https://play.google.com/intl/en_us/badges/images/generic/en_badge_web_generic.png" />
-</a> 
 
 Patreon: https://www.patreon.com/docile_alligator
 
@@ -87,7 +68,7 @@ Bitcoin: bc1qxtkd5ap9na7uy8nr9qpt6jny6tdwaj4v43ddle
 <tr>
 <td>
 
-Key features of **Infinity For Reddit**:
+Key features of **Infinity For Everything**:
 
 - Lazy mode: Automatic scrolling of posts enables you to enjoy amazing posts without moving your thumb.
 - Browsing posts
@@ -156,15 +137,15 @@ Don't forget to give the project a star! Thanks again!
 
 Here are other ways you can help:
 
-- [Report Bugs](https://github.com/Docile-Alligator/Infinity-For-Reddit/issues)
-- [Make Suggestions](https://github.com/Docile-Alligator/Infinity-For-Reddit/discussions)
+- [Report Bugs](https://github.com/efraimbart/Infinity-For-Everything/issues)
+- [Make Suggestions](https://github.com/efraimbart/Infinity-For-Everything/discussions)
 - [Translate The App](https://poeditor.com/join/project?hash=b2IRyfaJv6)
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 ## License
 
-Distributed under the AGPL-3.0 License. See <a href="https://github.com/Docile-Alligator/Infinity-For-Reddit/blob/master/LICENSE">LICENSE</a> for more information.
+Distributed under the AGPL-3.0 License. See <a href="https://github.com/efraimbart/Infinity-For-Everything/blob/master/LICENSE">LICENSE</a> for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
@@ -175,6 +156,6 @@ docilealligator.app@gmail.com (Owner)
 
 or [u/Wladefant](https://www.reddit.com/user/Wladefant) - wladefant@gmail.com (Collaborator)
 
-Project Link: [https://github.com/Docile-Alligator/Infinity-For-Reddit](https://github.com/Docile-Alligator/Infinity-For-Reddit)
+Project Link: [https://github.com/efraimbart/Infinity-For-Everything](https://github.com/efraimbart/Infinity-For-Everything)
 
 <p align="right">(<a href="#top">back to top</a>)</p>

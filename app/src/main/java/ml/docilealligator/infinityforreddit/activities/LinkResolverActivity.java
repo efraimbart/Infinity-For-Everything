@@ -26,6 +26,7 @@ import javax.inject.Named;
 import ml.docilealligator.infinityforreddit.Infinity;
 import ml.docilealligator.infinityforreddit.R;
 import ml.docilealligator.infinityforreddit.customtheme.CustomThemeWrapper;
+import ml.docilealligator.infinityforreddit.utils.APIUtils;
 import ml.docilealligator.infinityforreddit.utils.SharedPreferencesUtils;
 
 public class LinkResolverActivity extends AppCompatActivity {
@@ -144,7 +145,15 @@ public class LinkResolverActivity extends AppCompatActivity {
                     List<String> segments = uri.getPathSegments();
 
                     if (authority != null) {
-                        if (authority.equals("reddit-uploaded-media.s3-accelerate.amazonaws.com")) {
+                        if (authority.equals("everything-site.vercel.app")) {
+                            int authorizeIndex = segments.lastIndexOf("authorize");
+                            if (authorizeIndex >= 0) {
+                                Intent intent = new Intent(this, LoginActivity.class);
+                                intent.putExtra(LoginActivity.EXTRA_SET_CLIENT_ID_KEY, uri.getQueryParameter(APIUtils.SET_CLIENT_ID_KEY));
+                                intent.putExtra(LoginActivity.EXTRA_SET_SITE_KEY, uri.getQueryParameter(APIUtils.SET_SITE_KEY));
+                                startActivity(intent);
+                            }
+                        } else if (authority.equals("reddit-uploaded-media.s3-accelerate.amazonaws.com")) {
                             String unescapedUrl = uri.toString().replace("%2F", "/");
                             int lastSlashIndex = unescapedUrl.lastIndexOf("/");
                             if (lastSlashIndex < 0 || lastSlashIndex == unescapedUrl.length() - 1) {
