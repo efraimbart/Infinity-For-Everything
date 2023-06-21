@@ -789,7 +789,12 @@ public class ViewVideoActivity extends AppCompatActivity implements CustomFontRe
                     List<String> segments = redirectUri.getPathSegments();
                     int commentsIndex = segments.lastIndexOf("comments");
                     String postId = segments.get(commentsIndex + 1);
-                    FetchPost.fetchPost(mExecutor, new Handler(), retrofit, postId, null,
+                    String postSubreddit = null;
+                    if (segments.lastIndexOf("r") >= 0) {
+                        int subredditIndex = segments.lastIndexOf("r");
+                        postSubreddit = String.join("/", List.of(segments.get(subredditIndex), segments.get(subredditIndex + 1))) ;
+                    }
+                    FetchPost.fetchPost(mExecutor, new Handler(), retrofit, postId, postSubreddit, null,
                             new FetchPost.FetchPostListener() {
                                 @Override
                                 public void fetchPostSuccess(Post post) {

@@ -48,8 +48,14 @@ public interface RedditAPI {
     @GET("comments/{id}.json?raw_json=1")
     Call<String> getPostOauth(@Path("id") String id, @HeaderMap Map<String, String> headers);
 
+    @GET("{subreddit}/comments/{id}.json?raw_json=1")
+    Call<String> getSubredditPostOauth(@Path("id") String id, @Path("subreddit") String subreddit, @HeaderMap Map<String, String> headers);
+
     @GET("comments/{id}.json?raw_json=1")
     Call<String> getPost(@Path("id") String id);
+
+    @GET("{subreddit}/comments/{id}.json?raw_json=1")
+    Call<String> getSubredditPost(@Path("id") String id, @Path("subreddit") String subreddit);
 
     @GET("user/{username}/about.json?raw_json=1")
     Call<String> getUserData(@Path("username") String username);
