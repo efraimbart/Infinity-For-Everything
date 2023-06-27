@@ -1481,7 +1481,7 @@ public class ViewPostDetailFragment extends Fragment implements FragmentCommunic
         }
 
         Retrofit retrofit = mAccessToken == null ? mRetrofit : mOauthRetrofit;
-        FetchComment.fetchComments(mExecutor, new Handler(), retrofit, mAccessToken, mPost.getId(), commentId, sortType,
+        FetchComment.fetchComments(mExecutor, new Handler(), retrofit, mAccessToken, mPost.getId(), mPost.getSubredditName(), commentId, sortType,
                 mContextNumber, mExpandChildren, mLocale, new FetchComment.FetchCommentListener() {
                     @Override
                     public void onFetchCommentSuccess(ArrayList<Comment> expandedComments,
@@ -1608,7 +1608,7 @@ public class ViewPostDetailFragment extends Fragment implements FragmentCommunic
                 } else {
                     retrofit = mOauthRetrofit;
                 }
-                FetchPost.fetchPost(mExecutor, new Handler(), retrofit, mPost.getId(), mPost.getSubredditNamePrefixed(), mAccessToken,
+                FetchPost.fetchPost(mExecutor, new Handler(), retrofit, mPost.getId(), mPost.getSubredditName(), mAccessToken,
                         new FetchPost.FetchPostListener() {
                             @Override
                             public void fetchPostSuccess(Post post) {

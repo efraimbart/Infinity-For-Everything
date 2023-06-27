@@ -14,20 +14,20 @@ import retrofit2.Response;
 import retrofit2.Retrofit;
 
 public class FetchPost {
-    public static void fetchPost(Executor executor, Handler handler, Retrofit retrofit, String id, String namePrefixed, String accessToken,
+    public static void fetchPost(Executor executor, Handler handler, Retrofit retrofit, String id, String name, String accessToken,
                                  FetchPostListener fetchPostListener) {
         Call<String> postCall;
         if (accessToken == null) {
-            if (namePrefixed == null) {
+            if (name == null) {
                 postCall = retrofit.create(RedditAPI.class).getPost(id);
             } else {
-                postCall = retrofit.create(RedditAPI.class).getSubredditPost(id, namePrefixed);
+                postCall = retrofit.create(RedditAPI.class).getSubredditPost(id, name);
             }
         } else {
-            if (namePrefixed == null) {
+            if (name == null) {
                 postCall = retrofit.create(RedditAPI.class).getPostOauth(id, APIUtils.getOAuthHeader(accessToken));
             } else {
-                postCall = retrofit.create(RedditAPI.class).getSubredditPostOauth(id, namePrefixed, APIUtils.getOAuthHeader(accessToken));
+                postCall = retrofit.create(RedditAPI.class).getSubredditPostOauth(id, name, APIUtils.getOAuthHeader(accessToken));
             }
         }
         postCall.enqueue(new Callback<>() {

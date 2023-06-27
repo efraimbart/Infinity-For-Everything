@@ -19,23 +19,39 @@ import retrofit2.Retrofit;
 
 public class FetchComment {
     public static void fetchComments(Executor executor, Handler handler, Retrofit retrofit,
-                                     @Nullable String accessToken, String article,
+                                     @Nullable String accessToken, String article, String subreddit,
                                      String commentId, SortType.Type sortType, String contextNumber, boolean expandChildren,
                                      Locale locale, FetchCommentListener fetchCommentListener) {
         RedditAPI api = retrofit.create(RedditAPI.class);
         Call<String> comments;
         if (accessToken == null) {
-            if (commentId == null) {
-                comments = api.getPostAndCommentsById(article, sortType);
+            if (subreddit == null) {
+                if (commentId == null) {
+                    comments = api.getPostAndCommentsById(article, sortType);
+                } else {
+                    comments = api.getPostAndCommentsSingleThreadById(article, commentId, sortType, contextNumber);
+                }
             } else {
-                comments = api.getPostAndCommentsSingleThreadById(article, commentId, sortType, contextNumber);
+                if (commentId == null) {
+                    comments = api.getSubredditPostAndCommentsById(article, subreddit, sortType);
+                } else {
+                    comments = api.getSubredditPostAndCommentsSingleThreadById(article, subreddit, commentId, sortType, contextNumber);
+                }
             }
         } else {
-            if (commentId == null) {
-                comments = api.getPostAndCommentsByIdOauth(article, sortType, APIUtils.getOAuthHeader(accessToken));
+            if (subreddit == null) {
+                if (commentId == null) {
+                    comments = api.getPostAndCommentsByIdOauth(article, sortType, APIUtils.getOAuthHeader(accessToken));
+                } else {
+                    comments = api.getPostAndCommentsSingleThreadByIdOauth(article, commentId, sortType, contextNumber,
+                            APIUtils.getOAuthHeader(accessToken));
+                }
             } else {
-                comments = api.getPostAndCommentsSingleThreadByIdOauth(article, commentId, sortType, contextNumber,
-                        APIUtils.getOAuthHeader(accessToken));
+                if (commentId == null) {
+                    comments = api.getSubredditPostAndCommentsByIdOauth(article, subreddit, sortType, APIUtils.getOAuthHeader(accessToken));
+                } else {
+                    comments = api.getSubredditPostAndCommentsSingleThreadByIdOauth(article, subreddit, commentId, sortType, contextNumber, APIUtils.getOAuthHeader(accessToken));
+                }
             }
         }
 

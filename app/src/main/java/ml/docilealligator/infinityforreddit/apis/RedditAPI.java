@@ -48,13 +48,13 @@ public interface RedditAPI {
     @GET("comments/{id}.json?raw_json=1")
     Call<String> getPostOauth(@Path("id") String id, @HeaderMap Map<String, String> headers);
 
-    @GET("{subreddit}/comments/{id}.json?raw_json=1")
+    @GET("r/{subreddit}/comments/{id}.json?raw_json=1")
     Call<String> getSubredditPostOauth(@Path("id") String id, @Path("subreddit") String subreddit, @HeaderMap Map<String, String> headers);
 
     @GET("comments/{id}.json?raw_json=1")
     Call<String> getPost(@Path("id") String id);
 
-    @GET("{subreddit}/comments/{id}.json?raw_json=1")
+    @GET("r/{subreddit}/comments/{id}.json?raw_json=1")
     Call<String> getSubredditPost(@Path("id") String id, @Path("subreddit") String subreddit);
 
     @GET("user/{username}/about.json?raw_json=1")
@@ -136,6 +136,25 @@ public interface RedditAPI {
 
     @GET("/comments/{id}.json?raw_json=1")
     Call<String> getPostAndCommentsById(@Path("id") String id, @Query("sort") SortType.Type sortType);
+
+    @GET("/r/{subreddit}/comments/{id}/placeholder/{singleCommentId}.json?raw_json=1")
+    Call<String> getSubredditPostAndCommentsSingleThreadByIdOauth(@Path("id") String id, @Path("subreddit") String subreddit,
+                                                         @Path("singleCommentId") String singleCommentId,
+                                                         @Query("sort") SortType.Type sortType, @Query("context") String contextNumber,
+                                                         @HeaderMap Map<String, String> headers);
+
+    @GET("/r/{subreddit}/comments/{id}.json?raw_json=1")
+    Call<String> getSubredditPostAndCommentsByIdOauth(@Path("id") String id, @Path("subreddit") String subreddit,
+                                             @Query("sort") SortType.Type sortType, @HeaderMap Map<String, String> headers);
+
+    @GET("/r/{subreddit}/comments/{id}/placeholder/{singleCommentId}.json?raw_json=1")
+    Call<String> getSubredditPostAndCommentsSingleThreadById(@Path("id") String id, @Path("subreddit") String subreddit,
+                                                     @Path("singleCommentId") String singleCommentId,
+                                                     @Query("sort") SortType.Type sortType, @Query("context") String contextNumber);
+
+    @GET("/r/{subreddit}/comments/{id}.json?raw_json=1")
+    Call<String> getSubredditPostAndCommentsById(@Path("id") String id, @Path("subreddit") String subreddit,
+                                                 @Query("sort") SortType.Type sortType);
 
     @Multipart
     @POST(".")
