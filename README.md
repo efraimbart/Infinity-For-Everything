@@ -148,14 +148,3 @@ Here are other ways you can help:
 Distributed under the AGPL-3.0 License. See <a href="https://github.com/efraimbart/Infinity-For-Everything/blob/master/LICENSE">LICENSE</a> for more information.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
-
-## Contact
-
-[u/Hostilenemy](https://www.reddit.com/user/Hostilenemy) -
-docilealligator.app@gmail.com (Owner)
-
-or [u/Wladefant](https://www.reddit.com/user/Wladefant) - wladefant@gmail.com (Collaborator)
-
-Project Link: [https://github.com/efraimbart/Infinity-For-Everything](https://github.com/efraimbart/Infinity-For-Everything)
-
-<p align="right">(<a href="#top">back to top</a>)</p>
