@@ -1,0 +1,27 @@
+package gripe.everything.infinityforeverything.font;
+
+import gripe.everything.infinityforeverything.R;
+
+public enum TitleFontStyle {
+    XSmall(R.style.TitleFontStyle_XSmall, "XSmall"),
+    Small(R.style.TitleFontStyle_Small, "Small"),
+    Normal(R.style.TitleFontStyle_Normal, "Normal"),
+    Large(R.style.TitleFontStyle_Large, "Large"),
+    XLarge(R.style.TitleFontStyle_XLarge, "XLarge");
+
+    private int resId;
+    private String title;
+
+    TitleFontStyle(int resId, String title) {
+        this.resId = resId;
+        this.title = title;
+    }
+
+    public int getResId() {
+        return resId;
+    }
+
+    public String getTitle() {
+        return title;
+    }
+}

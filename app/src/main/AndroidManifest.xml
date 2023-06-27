@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    package="ml.docilealligator.infinityforreddit">
+    package="gripe.everything.infinityforeverything">
 
     <queries>
         <intent>
@@ -27,7 +27,7 @@
     <uses-permission android:name="android.permission.POST_NOTIFICATIONS"/>
 
     <application
-        android:name=".Infinity"
+        android:name="gripe.everything.infinityforeverything.Infinity"
         android:allowBackup="false"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/application_name"
@@ -37,185 +37,185 @@
         android:usesCleartextTraffic="true"
         tools:replace="android:label">
         <activity
-            android:name=".activities.HistoryActivity"
+            android:name="gripe.everything.infinityforeverything.activities.HistoryActivity"
             android:exported="false"
             android:label="@string/history_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.PostPollActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostPollActivity"
             android:label="@string/post_poll_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.EditProfileActivity"
+            android:name="gripe.everything.infinityforeverything.activities.EditProfileActivity"
             android:label="@string/edit_profile_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.WikiActivity"
+            android:name="gripe.everything.infinityforeverything.activities.WikiActivity"
             android:label="@string/wiki_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.TrendingActivity"
+            android:name="gripe.everything.infinityforeverything.activities.TrendingActivity"
             android:label="@string/trending_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.PostGalleryActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostGalleryActivity"
             android:label="@string/post_gallery_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.LockScreenActivity"
+            android:name="gripe.everything.infinityforeverything.activities.LockScreenActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.WebViewActivity"
+            android:name="gripe.everything.infinityforeverything.activities.WebViewActivity"
             android:configChanges="orientation|screenSize"
             android:label=""
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.SuicidePreventionActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SuicidePreventionActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.MultiredditSelectionActivity"
+            android:name="gripe.everything.infinityforeverything.activities.MultiredditSelectionActivity"
             android:label="@string/multireddit_selection_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.SearchUsersResultActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SearchUsersResultActivity"
             android:label="@string/search_users_result_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.PostFilterUsageListingActivity"
-            android:parentActivityName=".activities.SettingsActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostFilterUsageListingActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.SettingsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.PostFilterPreferenceActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostFilterPreferenceActivity"
             android:label="@string/post_filter_preference_activity_label"
-            android:parentActivityName=".activities.SettingsActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.SettingsActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.CustomizePostFilterActivity"
+            android:name="gripe.everything.infinityforeverything.activities.CustomizePostFilterActivity"
             android:label="@string/customize_post_filter_activity_label"
-            android:parentActivityName=".activities.SettingsActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.SettingsActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.FetchRandomSubredditOrPostActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.FetchRandomSubredditOrPostActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.GiveAwardActivity"
+            android:name="gripe.everything.infinityforeverything.activities.GiveAwardActivity"
             android:label="@string/give_award_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.SelectUserFlairActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SelectUserFlairActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.FullMarkdownActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.FullMarkdownActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.SubmitCrosspostActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SubmitCrosspostActivity"
             android:label="@string/submit_crosspost_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
 
         <service
-            android:name=".services.DownloadMediaService"
+            android:name="gripe.everything.infinityforeverything.services.DownloadMediaService"
             android:enabled="true"
             android:exported="false" />
 
         <activity
-            android:name=".activities.ViewRedditGalleryActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewRedditGalleryActivity"
             android:configChanges="orientation|screenSize|layoutDirection"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Draggable" />
         <activity
-            android:name=".activities.SendPrivateMessageActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SendPrivateMessageActivity"
             android:label="@string/send_private_message_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
 
         <service
-            android:name=".services.DownloadRedditVideoService"
+            android:name="gripe.everything.infinityforeverything.services.DownloadRedditVideoService"
             android:enabled="true"
             android:exported="false" />
 
         <activity
-            android:name=".activities.ViewPrivateMessagesActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewPrivateMessagesActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.ViewImgurMediaActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewImgurMediaActivity"
             android:configChanges="orientation|screenSize|layoutDirection"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Draggable" />
         <activity
-            android:name=".activities.ReportActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ReportActivity"
             android:label="@string/report_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.SelectedSubredditsAndUsersActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SelectedSubredditsAndUsersActivity"
             android:label="@string/selected_subeddits_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.EditMultiRedditActivity"
+            android:name="gripe.everything.infinityforeverything.activities.EditMultiRedditActivity"
             android:label="@string/edit_multi_reddit_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.CustomThemePreviewActivity"
+            android:name="gripe.everything.infinityforeverything.activities.CustomThemePreviewActivity"
             android:label="@string/theme_preview_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.CustomThemeListingActivity"
+            android:name="gripe.everything.infinityforeverything.activities.CustomThemeListingActivity"
             android:label="@string/custom_theme_listing_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.CustomizeThemeActivity"
+            android:name="gripe.everything.infinityforeverything.activities.CustomizeThemeActivity"
             android:label="@string/customize_theme_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar" />
         <activity
-            android:name=".activities.SubredditMultiselectionActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SubredditMultiselectionActivity"
             android:label="@string/subreddit_multiselection_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.CreateMultiRedditActivity"
+            android:name="gripe.everything.infinityforeverything.activities.CreateMultiRedditActivity"
             android:label="@string/create_multi_reddit_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.ViewMultiRedditDetailActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewMultiRedditDetailActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.AccountSavedThingActivity"
+            android:name="gripe.everything.infinityforeverything.activities.AccountSavedThingActivity"
             android:label="@string/account_saved_thing_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.ShareDataResolverActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ShareDataResolverActivity"
             android:exported="true">
             <intent-filter android:label="@string/submit_post">
                 <action android:name="android.intent.action.SEND" />
@@ -240,42 +240,42 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.SettingsActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SettingsActivity"
             android:label="@string/settings_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/PreferenceActivityTheme" />
         <activity
-            android:name=".activities.InboxActivity"
+            android:name="gripe.everything.infinityforeverything.activities.InboxActivity"
             android:label="@string/view_message_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.AccountPostsActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.AccountPostsActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.EditCommentActivity"
+            android:name="gripe.everything.infinityforeverything.activities.EditCommentActivity"
             android:label="@string/edit_comment_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.EditPostActivity"
+            android:name="gripe.everything.infinityforeverything.activities.EditPostActivity"
             android:label="@string/edit_post_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.FilteredPostsActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.FilteredPostsActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.SearchSubredditsResultActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SearchSubredditsResultActivity"
             android:label="@string/search_subreddits_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.LinkResolverActivity"
+            android:name="gripe.everything.infinityforeverything.activities.LinkResolverActivity"
             android:exported="true">
             <intent-filter android:label="@string/handle_link">
                 <action android:name="android.intent.action.SEND" />
@@ -296,63 +296,63 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.SearchActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SearchActivity"
             android:label="@string/search_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.RulesActivity"
+            android:name="gripe.everything.infinityforeverything.activities.RulesActivity"
             android:label="@string/rules_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.PostVideoActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostVideoActivity"
             android:label="@string/post_video_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.PostImageActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostImageActivity"
             android:label="@string/post_image_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.PostLinkActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostLinkActivity"
             android:label="@string/post_link_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.SubscribedThingListingActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SubscribedThingListingActivity"
             android:label="@string/subscriptions"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.SubredditSelectionActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SubredditSelectionActivity"
             android:label="@string/subreddit_selection_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.PostTextActivity"
+            android:name="gripe.everything.infinityforeverything.activities.PostTextActivity"
             android:label="@string/post_text_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.CommentActivity"
+            android:name="gripe.everything.infinityforeverything.activities.CommentActivity"
             android:label="@string/comment_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.NoActionBar"
             android:windowSoftInputMode="adjustResize" />
         <activity
-            android:name=".activities.SearchResultActivity"
+            android:name="gripe.everything.infinityforeverything.activities.SearchResultActivity"
             android:label="@string/search_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.MainActivity"
             android:exported="true"
             android:label="@string/application_name"
             android:theme="@style/AppTheme.Launcher"
@@ -364,32 +364,32 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".activities.LoginActivity"
+            android:name="gripe.everything.infinityforeverything.activities.LoginActivity"
             android:configChanges="orientation|screenLayout|screenSize|layoutDirection"
             android:label="@string/login_activity_label"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.ViewImageOrGifActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewImageOrGifActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.SlidableWithActionBar" />
         <activity
-            android:name=".activities.ViewVideoActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewVideoActivity"
             android:configChanges="orientation|screenSize|layoutDirection"
-            android:parentActivityName=".activities.MainActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Draggable" />
         <activity
-            android:name=".activities.ViewPostDetailActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewPostDetailActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable"
             android:windowSoftInputMode="adjustPan" />
         <activity
-            android:name=".activities.ViewSubredditDetailActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewSubredditDetailActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
         <activity
-            android:name=".activities.ViewUserDetailActivity"
-            android:parentActivityName=".activities.MainActivity"
+            android:name="gripe.everything.infinityforeverything.activities.ViewUserDetailActivity"
+            android:parentActivityName="gripe.everything.infinityforeverything.activities.MainActivity"
             android:theme="@style/AppTheme.Slidable" />
 
         <provider
@@ -412,15 +412,15 @@
         </provider>
 
         <service
-            android:name=".services.SubmitPostService"
+            android:name="gripe.everything.infinityforeverything.services.SubmitPostService"
             android:enabled="true"
             android:exported="false" />
         <service
-            android:name=".services.EditProfileService"
+            android:name="gripe.everything.infinityforeverything.services.EditProfileService"
             android:enabled="true"
             android:exported="false" />
 
-        <receiver android:name=".broadcastreceivers.DownloadedMediaDeleteActionBroadcastReceiver" />
+        <receiver android:name="gripe.everything.infinityforeverything.broadcastreceivers.DownloadedMediaDeleteActionBroadcastReceiver" />
     </application>
 
 </manifest>

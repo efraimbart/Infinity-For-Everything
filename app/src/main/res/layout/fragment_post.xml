@@ -2,14 +2,14 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:application="ml.docilealligator.infinityforreddit.fragments.PostFragment">
+    tools:application="gripe.everything.infinityforeverything.fragments.PostFragment">
 
     <androidx.swiperefreshlayout.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout_post_fragment"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
-        <ml.docilealligator.infinityforreddit.customviews.CustomToroContainer
+        <gripe.everything.infinityforeverything.customviews.CustomToroContainer
             android:id="@+id/recycler_view_post_fragment"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
