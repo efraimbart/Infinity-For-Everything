@@ -13,9 +13,9 @@ import okhttp3.RequestBody;
  */
 
 public class APIUtils {
-    public static final String OAUTH_URL = "https://everything-site.vercel.app/api/v1/authorize";
-    public static final String OAUTH_API_BASE_URI = "https://oauth-everything-site.vercel.app";
-    public static final String API_BASE_URI = "https://everything-site.vercel.app";
+    public static final String OAUTH_URL = "https://www.everything.gripe/api/v1/authorize";
+    public static final String OAUTH_API_BASE_URI = "https://oauth.everything.gripe";
+    public static final String API_BASE_URI = "https://www.everything.gripe";
     public static final String API_UPLOAD_MEDIA_URI = "https://reddit-uploaded-media.s3-accelerate.amazonaws.com";
     public static final String API_UPLOAD_VIDEO_URI = "https://reddit-uploaded-video.s3-accelerate.amazonaws.com";
     public static final String GFYCAT_API_BASE_URI = "https://api.gfycat.com/v1/gfycats/";

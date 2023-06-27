@@ -145,15 +145,7 @@ public class LinkResolverActivity extends AppCompatActivity {
                     List<String> segments = uri.getPathSegments();
 
                     if (authority != null) {
-                        if (authority.equals("everything-site.vercel.app")) {
-                            int authorizeIndex = segments.lastIndexOf("authorize");
-                            if (authorizeIndex >= 0) {
-                                Intent intent = new Intent(this, LoginActivity.class);
-                                intent.putExtra(LoginActivity.EXTRA_SET_CLIENT_ID_KEY, uri.getQueryParameter(APIUtils.SET_CLIENT_ID_KEY));
-                                intent.putExtra(LoginActivity.EXTRA_SET_SITE_KEY, uri.getQueryParameter(APIUtils.SET_SITE_KEY));
-                                startActivity(intent);
-                            }
-                        } else if (authority.equals("reddit-uploaded-media.s3-accelerate.amazonaws.com")) {
+                        if (authority.equals("reddit-uploaded-media.s3-accelerate.amazonaws.com")) {
                             String unescapedUrl = uri.toString().replace("%2F", "/");
                             int lastSlashIndex = unescapedUrl.lastIndexOf("/");
                             if (lastSlashIndex < 0 || lastSlashIndex == unescapedUrl.length() - 1) {
@@ -170,8 +162,14 @@ public class LinkResolverActivity extends AppCompatActivity {
                             intent.putExtra(ViewVideoActivity.EXTRA_VIDEO_TYPE, ViewVideoActivity.VIDEO_TYPE_V_REDD_IT);
                             intent.putExtra(ViewVideoActivity.EXTRA_V_REDD_IT_URL, uri.toString());
                             startActivity(intent);
-                        } else if (authority.contains("reddit.com") || authority.contains("redd.it") || authority.contains("reddit.app")) {
-                            if (authority.equals("reddit.app.link") && path.isEmpty()) {
+                        } else if (authority.equals("everything.gripe") || authority.contains("reddit.com") || authority.contains("redd.it") || authority.contains("reddit.app")) {
+                            int authorizeIndex = segments.lastIndexOf("authorize");
+                            if (authorizeIndex >= 0) {
+                                Intent intent = new Intent(this, LoginActivity.class);
+                                intent.putExtra(LoginActivity.EXTRA_SET_CLIENT_ID_KEY, uri.getQueryParameter(APIUtils.SET_CLIENT_ID_KEY));
+                                intent.putExtra(LoginActivity.EXTRA_SET_SITE_KEY, uri.getQueryParameter(APIUtils.SET_SITE_KEY));
+                                startActivity(intent);
+                            } else if (authority.equals("reddit.app.link") && path.isEmpty()) {
                                 String redirect = uri.getQueryParameter("$og_redirect");
                                 if (redirect != null) {
                                     handleUri(Uri.parse(redirect));
