@@ -5,7 +5,7 @@
 
 <div align="center">
 
-Aa Everything client on Android written in Java. It does not have any ads and it features a clean UI and smooth browsing experience
+An Everything client on Android written in Java. It does not have any ads and it features a clean UI and smooth browsing experience
 
 <img align="right" src="https://raw.githubusercontent.com/efraimbart/Infinity-For-Everything/master/fastlane/metadata/android/en-US/images/icon.png" width=200>
 

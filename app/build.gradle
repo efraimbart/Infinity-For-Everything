@@ -5,7 +5,7 @@ plugins {
 android {
     compileSdk 33
     defaultConfig {
-        applicationId "ml.docilealligator.infinityforreddit"
+        applicationId "gripe.everything.infinityforeverything"
         minSdk 21
         targetSdk 33
         versionCode 117

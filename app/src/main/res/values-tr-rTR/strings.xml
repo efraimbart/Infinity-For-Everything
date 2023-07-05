@@ -463,8 +463,8 @@ Tekrar denemek için tıklayın."</string>
     <string name="error_getting_multi_reddit_data">"Multireddit verileri alınırken hata oluştu"</string>
     <string name="error_loading_multi_reddit_list">"Multireddit senkronize edilemiyor"</string>
     <string name="error_loading_subscriptions">"Abonelikler senkronize edilemiyor"</string>
-    <string name="share_this_app">"Harika bir Reddit uygulaması olan Infinity For Reddit'e bir göz atın!
-https://play.google.com/store/apps/details?id=ml.docilealligator.infinityforreddit"</string>
+    <string name="share_this_app">"Harika bir Everything uygulaması olan Infinity For Everything'e bir göz atın!
+https://play.google.com/store/apps/details?id=gripe.everything.infinityforeverything"</string>
     <string name="error_getting_subreddit_name">"Subreddit adı alınırken hata oluştu"</string>
     <string name="share_post_link">"Gönderi Bağlantısını Paylaş"</string>
     <string name="share_image_link">"Görüntü Bağlantısını Paylaş"</string>
