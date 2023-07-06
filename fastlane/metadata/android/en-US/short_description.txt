@@ -1,1 +1,1 @@
-A beautiful, feature-rich Reddit client.
+A beautiful, feature-rich Everything client.
